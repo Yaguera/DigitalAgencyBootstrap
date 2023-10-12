@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+/*------------------------------ banner-section ------------------------------*/
+
+#banner {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+}
+
+.promo-title {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.play-btn {
+    margin: 20px;
+    width: 45px;
+}
+
+#banner a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-img {
+    width: 100%;
+}
+
+/*------------------------------ Services Section ------------------------------ */
+
+#services {
+    padding: 80px 0;
+}
+
+.service-img {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.title::before {
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(4rem);
+}
+
+#services .btn-primary {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+/*------------------------------ About Us Section ------------------------------ */
+
+#about-us {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.about-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+#about-us ul li {
+    margin: 10px 0;
+}
+
+#about-us ul {
+    margin-left: 20px;
+}
+
+/*------------------------------ Testimonials Section ------------------------------ */
+
+#testimonials {
+    margin: 100px 0;
+}
+
+.testimonials {
+    border-left: 4px solid #7b1798;
+    margin: 50px 0;
+}
+
+.testimonials img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    object-fit: contain;
+}
+
+.user-details {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+/*------------------------------ Social Media Section ------------------------------ */
+
+#social-media {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+#social-media p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px);
+}
+
+/*------------------------------ Footer Section ------------------------------ */
+
+footer {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+}
+
+footer-box {
+    padding: 20px;
+}
+
+footer-img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .fa {
+    margin-right: 8px;
+    width: 30px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.footer-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    margin-top: 25px;
+}
+
+.footer-box .btn-light {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+hr {
+    background-color: #fff;
+    margin: 0 !important;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding: 16px;
+    text-align: center;
+}
+
+footer .container {
+    margin-bottom: 30px;
+}
