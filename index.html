@@ -182,8 +182,8 @@
                 </div>
                 <div class="col-md-4 footer-box">
                     <p><b>SUBSCRIBE NEWSLETTER</b></p>
-                    <input type="email" class="form-control" placeholder="Your Emai-l">
-                    <button type="button" class="btn btn-light">Subscribe</button>
+                    <input type="email" class="form-control" placeholder="Your best e-mail">
+                    <button type="button" class="btn btn-dark">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -194,6 +194,15 @@
     <script src="lib/smooth-scroll.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
+        document.querySelectorAll('.navbar-nav a').forEach(item => {
+            item.addEventListener('click', (event) => {
+                // Verifique se o elemento do botão da navegação está aberto
+                if (document.querySelector('.navbar-toggler').getAttribute('aria-expanded') === 'true') {
+                    // Feche a navegação ao clicar em um link
+                    document.querySelector('.navbar-toggler').click();
+                }
+            });
+        });
     </script>
 </body>
 

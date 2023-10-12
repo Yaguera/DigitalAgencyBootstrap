@@ -207,14 +207,35 @@ footer-img {
     margin-top: 25px;
 }
 
-.footer-box .btn-light {
+.footer-box .btn-dark {
+    position: relative;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
+    z-index: 2;
     border: none;
     border-radius: 0;
     margin-top: 30px;
     background-image: linear-gradient(to right, #a517ba, #5f1782);
 }
+
+.footer-box .btn-dark::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    /* same as { top: 0; right: 0; bottom: 0; left: 0; } */
+    background-image: linear-gradient(to right, #5f1782, #a517ba);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s linear;
+    color: #fff;
+}
+
+.footer-box .btn-dark:hover::before {
+    opacity: 1;
+    color: #fff;
+}
+
+
 
 hr {
     background-color: #fff;
